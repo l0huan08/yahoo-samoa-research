@@ -1,0 +1,38 @@
+My process are below, maybe it can help others who want to create user-define tasks:
+(1) create a new project in Eclipse.
+(2) add the HelloWorldTask codes into this project.
+(3) add the reference libs to the project. (samoa-api.0.01-SNAPSHOT.jar, javacliparser-0.5.0.jar, slf4j-api.17.2.jar, they can be found in "samoa/samoa-api/target & samoa/samoa-api/lib" after running built samoa)
+(4) build the project, and export it to a jar file, such as "HelloWorldTask.jar"
+(5) copy this user-defined-task jar to the
+samoa/target folder and then run:
+java -cp "samoa/target/*" com.yahoo.labs.samoa.LocalDoTask
+"com.yahoo.labs.samoa.examples.HelloWorldTask -i 20 -p 4"
+(The parameters -i and -p can be found in HelloWorldTask.java")
+
+This is the screenshot of this task running:
+helloworldtask
+
+
+
+
+==========  SAMOA =================
+
+Now I have another question: how to run this task in S4 and Strom platform?
+Albert Bifet
+ abifet commented 3 days ago
+One way to run this in Storm Local Mode is:
+
+java -cp
+$STORM_HOME/lib/*:$STORM_HOME/storm-0.8.2.jar:target/SAMOA-Storm-0.0.1-SNAPSHOT.jar:target/HelloWorldTask.jar
+com.yahoo.labs.samoa.LocalStormDoTask
+"com.yahoo.labs.samoa.examples.HelloWorldTask -i 20 -p 4"
+
+where $STORM_HOME is the path to your Storm 0.8.2 installation.
+
+
+==========  s4 ===================
+I agree that the way to develop new task should be improved. We haven't dedicated a great deal of thought to it up to now.
+
+In theory, running your task on S4 should be the same as running the ClusteringEvaluation or PrequentialEvaluation tasks. You just need to put all your classes in a .s4r file and submit them to S4. A simple way to do this is to just clone the source of SAMOA, add your classes to the project and then do a normal S4 build. Then you should be able to use the bin/samoa script.
+
+Regarding the problem with S4, I think I might have introduced a bug with the last EntranceProcessor redesign. I will try to test and solve it later this week.
