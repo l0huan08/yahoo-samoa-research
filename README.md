@@ -14,6 +14,7 @@ l0huan08@gmail.com
 
 ====================
 This is my final project for master degree in University of Louisville. My reasearch is mainly focus on trying Yahoo SAMOA, a distributed stream data mining platform. I composite 3 computers in our lab into a cluster, and setup SAMOA on this cluster.
+
 My main work includes four parts:
 1. Build the cluster and Setup SAMOA.
 2. Experiment 1: Test performance of SAMOA.
