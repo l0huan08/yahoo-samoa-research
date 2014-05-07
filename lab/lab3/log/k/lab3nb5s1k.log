@@ -1,0 +1,70 @@
+hl@hlnode3:/opt/s4/apache-s4-0.6.0-incubating-src$ . ~/scripts/startNode.sh
+20:41:14.020 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91706941058711554; state is : SyncConnected
+20:41:14.295 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-0 by hlnode3
+20:41:19.036 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+20:41:20.012 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp2841814987730942892s4r]
+20:41:20.013 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399336880013-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+20:41:20.014 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399336880013-0/tmp2841814987730942892s4r-1399336880014]
+20:41:20.112 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+20:41:20.279 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=1,name=cluster,mode=unicast,type=,nodes=[{partition=0,port=12000,machineName=hlnode3,taskId=Task-0}]} from null
+20:41:20.300 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@1271f41
+20:41:20.598 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+20:41:20.642 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+20:41:20.653 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@147a87e
+20:41:20.942 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706941058711554
+20:41:20.956 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706941058711554
+20:41:20.983 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=1,name=cluster,mode=unicast,type=,nodes=[{partition=0,port=12000,machineName=hlnode3,taskId=Task-0}]} from null
+20:41:20.997 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp2841814987730942892s4r
+20:41:20.998 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+20:41:21.618 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+20:41:21.793 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+20:41:21.800 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+20:41:21.814 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+20:41:21.846 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+20:41:21.852 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:41:21.856 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:41:21.857 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:41:21.857 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [0]
+20:41:21.990 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+20:41:22.013 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+20:41:22.050 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - NBModelProcessor created, id = 0
+20:41:22.093 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=23,A=42
+20:42:06.005 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - 30 seconds for 100000 instances
+20:42:06.021 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 100,000
+classified instances = 100,000
+classifications correct (percent) = 99.687
+Kappa Statistic (percent) = 98.78
+Kappa Temporal Statistic (percent) = -3,812.5
+20:42:35.294 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - 29 seconds for 100000 instances
+20:42:35.295 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 200,000
+classified instances = 200,000
+classifications correct (percent) = 98.992
+Kappa Statistic (percent) = 93.394
+Kappa Temporal Statistic (percent) = -5,205.263
+20:43:04.401 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - 29 seconds for 100000 instances
+20:43:04.403 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 300,000
+classified instances = 300,000
+classifications correct (percent) = 98.876
+Kappa Statistic (percent) = 90.218
+Kappa Temporal Statistic (percent) = -7,395.556
+20:43:30.535 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - send last event
+20:43:32.316 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - Processing last event.
+20:43:32.316 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - === output Final Matrix====
+20:43:32.317 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=23,A=42
+20:43:32.319 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - nClass={0|2|0|0|0|0|0|1|0|15|0|77,888|1|0|0|0|0|0|22,093|0|0|0|0}
+20:43:32.319 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - last event is received!
+20:43:32.320 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - total count: 399999
+20:43:32.321 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - com.yahoo.labs.samoa.evaluation.EvaluatorProcessorid = 0
+evaluation instances,classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent)
+100000.0,100000.0,99.687,98.78016821094548,-3812.5000000014743
+200000.0,200000.0,98.992,93.39353856149917,-5205.26315789407
+300000.0,300000.0,98.87566666666666,90.21813287128963,-7395.555555556414
+
+20:43:32.322 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - total evaluation time: 117 seconds for 399999 instances

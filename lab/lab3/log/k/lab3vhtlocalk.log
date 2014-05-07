@@ -1,0 +1,30 @@
+hl@hlnode3:/opt/samoa$ . ~/lab/lab3/scripts2/local/lab3vhtlocalk.sh
+/opt/samoa/bin/samoa
+Deploying to LOCAL
+Command line string =  com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation -d /home/hl/lab/lab3/result/resultLocalVHTk -r (com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor -a 0.2 -b 0.8 -o 1 -i 500000) -l (com.yahoo.labs.samoa.learners.classifiers.trees.VerticalHoeffdingTree) -s (ArffFileStream -f /home/hl/lab/lab3/data/k.arff) -f 100000 -i 500000
+[main] INFO com.yahoo.labs.samoa.LocalDoTask - Sucessfully instantiating com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93)
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94)
+	at com.yahoo.labs.samoa.topology.impl.SimpleProcessingItem.processEvent(SimpleProcessingItem.java:98)
+	at com.yahoo.labs.samoa.topology.impl.SimpleStream.put(SimpleStream.java:79)
+	at com.yahoo.labs.samoa.learners.classifiers.trees.ModelAggregatorProcessor.processInstance(ModelAggregatorProcessor.java:318)
+	at com.yahoo.labs.samoa.learners.classifiers.trees.ModelAggregatorProcessor.processInstances(ModelAggregatorProcessor.java:306)
+	at com.yahoo.labs.samoa.learners.classifiers.trees.ModelAggregatorProcessor.processInstanceContentEvent(ModelAggregatorProcessor.java:293)
+	at com.yahoo.labs.samoa.learners.classifiers.trees.ModelAggregatorProcessor.process(ModelAggregatorProcessor.java:146)
+	at com.yahoo.labs.samoa.topology.impl.SimpleProcessingItem.processEvent(SimpleProcessingItem.java:98)
+	at com.yahoo.labs.samoa.topology.impl.SimpleStream.put(SimpleStream.java:79)
+	at com.yahoo.labs.samoa.learners.classifiers.trees.FilterProcessor.process(FilterProcessor.java:95)
+	at com.yahoo.labs.samoa.topology.impl.SimpleProcessingItem.processEvent(SimpleProcessingItem.java:98)
+	at com.yahoo.labs.samoa.topology.impl.SimpleStream.put(SimpleStream.java:79)
+	at com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor.processTrainFirstOrder(HLSplitDataPreProcessor.java:234)
+	at com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor.process(HLSplitDataPreProcessor.java:155)
+	at com.yahoo.labs.samoa.topology.impl.SimpleProcessingItem.processEvent(SimpleProcessingItem.java:98)
+	at com.yahoo.labs.samoa.topology.impl.SimpleStream.put(SimpleStream.java:79)
+	at com.yahoo.labs.samoa.topology.impl.SimpleEntranceProcessingItem.injectNextEvent(SimpleEntranceProcessingItem.java:45)
+	at com.yahoo.labs.samoa.topology.impl.SimpleTopology.run(SimpleTopology.java:36)
+	at com.yahoo.labs.samoa.topology.impl.SimpleEngine.submitTopology(SimpleEngine.java:36)
+	at com.yahoo.labs.samoa.LocalDoTask.main(LocalDoTask.java:87)

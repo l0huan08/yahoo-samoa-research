@@ -1,0 +1,51 @@
+hl@hlnode3:/opt/samoa$ . ~/lab/lab3/scripts2/local/lab3vhtlocalm.sh
+/opt/samoa/bin/samoa
+Deploying to LOCAL
+Command line string =  com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation -d /home/hl/lab/lab3/result/resultLocalVHTm -r (com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor -a 0.2 -b 0.8 -o 1 -i 10000) -l (com.yahoo.labs.samoa.learners.classifiers.trees.VerticalHoeffdingTree) -s (ArffFileStream -f /home/hl/lab/lab3/data/m10000.arff) -f 1000 -i 10000
+[main] INFO com.yahoo.labs.samoa.LocalDoTask - Sucessfully instantiating com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 1,000
+classified instances = 1,000
+classifications correct (percent) = 48.5
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.39
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 1 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 2,000
+classified instances = 2,000
+classifications correct (percent) = 50
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.604
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 1 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 3,000
+classified instances = 3,000
+classifications correct (percent) = 49.5
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.531
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 1 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 4,000
+classified instances = 4,000
+classifications correct (percent) = 50
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.604
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 1 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 5,000
+classified instances = 5,000
+classifications correct (percent) = 49.7
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.56
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 1 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 6,000
+classified instances = 6,000
+classifications correct (percent) = 50
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.604
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 1 seconds for 1000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 7,000
+classified instances = 7,000
+classifications correct (percent) = 49.786
+Kappa Statistic (percent) = 0
+Kappa Temporal Statistic (percent) = -0.572
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - send last event

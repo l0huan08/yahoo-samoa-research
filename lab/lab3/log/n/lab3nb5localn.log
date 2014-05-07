@@ -1,0 +1,45 @@
+hl@hlnode3:/opt/samoa$ . ~/lab/lab3/scripts2/local/lab3nb5localn.sh
+/opt/samoa/bin/samoa
+Deploying to LOCAL
+Command line string =  com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation -d /home/hl/lab/lab3/result/resultLocalNB5n -r (com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor -a 0.2 -b 0.8 -o 1 -i 50000) -l (com.yahoo.labs.samoa.learners.classifiers.hl.NaiveBayes) -s (ArffFileStream -f /home/hl/lab/lab3/data/n.arff) -f 10000 -i 50000
+[main] INFO com.yahoo.labs.samoa.LocalDoTask - Sucessfully instantiating com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NaiveBayes - ================================================
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NBModelProcessor - NBModelProcessor created, id = 0
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NBModelProcessor - K=2,A=42
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 10000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 10,000
+classified instances = 10,000
+classifications correct (percent) = 89.9
+Kappa Statistic (percent) = 79.744
+Kappa Temporal Statistic (percent) = 79.694
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 10000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 20,000
+classified instances = 20,000
+classifications correct (percent) = 89.915
+Kappa Statistic (percent) = 79.793
+Kappa Temporal Statistic (percent) = 79.741
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 10000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 30,000
+classified instances = 30,000
+classifications correct (percent) = 89.933
+Kappa Statistic (percent) = 79.84
+Kappa Temporal Statistic (percent) = 79.791
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - send last event
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NBModelProcessor - Processing last event.
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NBModelProcessor - === output Final Matrix====
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NBModelProcessor - K=2,A=42
+[main] INFO com.yahoo.labs.samoa.learners.classifiers.hl.NBModelProcessor - nClass={5,293|4,707}
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - last event is received!
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - total count: 39999
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - com.yahoo.labs.samoa.evaluation.EvaluatorProcessorid = 0
+evaluation instances,classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent)
+10000.0,10000.0,89.9,79.74425619304326,79.69441093687173
+20000.0,20000.0,89.915,79.79279854211605,79.74085978304541
+30000.0,30000.0,89.93333333333334,79.84019119295655,79.79122055674517
+
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - total evaluation time: 3 seconds for 39999 instances

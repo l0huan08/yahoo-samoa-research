@@ -1,0 +1,27 @@
+hl@hlnode3:/opt/samoa$ . ~/lab/lab3/scripts2/local/lab3vhtlocaln.sh
+/opt/samoa/bin/samoa
+Deploying to LOCAL
+Command line string =  com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation -d /home/hl/lab/lab3/result/resultLocalVHTn -r (com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor -a 0.2 -b 0.8 -o 1 -i 50000) -l (com.yahoo.labs.samoa.learners.classifiers.trees.VerticalHoeffdingTree) -s (ArffFileStream -f /home/hl/lab/lab3/data/n.arff) -f 10000 -i 50000
+[main] INFO com.yahoo.labs.samoa.LocalDoTask - Sucessfully instantiating com.yahoo.labs.samoa.tasks.hl.HLTrainTestEvaluation
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 10000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 10,000
+classified instances = 10,000
+classifications correct (percent) = 91.19
+Kappa Statistic (percent) = 82.123
+Kappa Temporal Statistic (percent) = 82.288
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 10000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 20,000
+classified instances = 20,000
+classifications correct (percent) = 90.985
+Kappa Statistic (percent) = 81.749
+Kappa Temporal Statistic (percent) = 81.89
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - 0 seconds for 10000 instances
+[main] INFO com.yahoo.labs.samoa.evaluation.EvaluatorProcessor - evaluation instances = 30,000
+classified instances = 30,000
+classifications correct (percent) = 91.05
+Kappa Statistic (percent) = 81.909
+Kappa Temporal Statistic (percent) = 82.033
+[main] INFO com.yahoo.labs.samoa.streams.hl.HLSplitDataPreProcessor - send last event

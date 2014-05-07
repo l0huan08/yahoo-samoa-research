@@ -1,0 +1,72 @@
+--------- node 3 ---------
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+20:20:07.602 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/n.arff
+20:20:07.934 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+20:20:07.942 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.942 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.942 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.942 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.942 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.943 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [0]
+20:20:08.080 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+20:20:08.101 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+20:20:43.189 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - 0 seconds for 10000 instances
+20:20:43.260 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 10,000
+classified instances = 10,000
+classifications correct (percent) = 90.79
+Kappa Statistic (percent) = 81.408
+Kappa Temporal Statistic (percent) = 81.683
+20:20:44.613 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - 1 seconds for 10000 instances
+20:20:44.617 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 20,000
+classified instances = 20,000
+classifications correct (percent) = 90.91
+Kappa Statistic (percent) = 81.663
+Kappa Temporal Statistic (percent) = 81.964
+20:20:47.012 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - 2 seconds for 10000 instances
+20:20:47.040 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 30,000
+classified instances = 30,000
+classifications correct (percent) = 90.91
+Kappa Statistic (percent) = 81.655
+Kappa Temporal Statistic (percent) = 81.895
+
+
+
+
+-------- node 2 -----------
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+20:20:07.420 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/n.arff
+20:20:07.676 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+20:20:07.680 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.681 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.682 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.683 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.684 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.686 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [1]
+
+
+--------- node 1 -------------
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+20:20:07.562 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/n.arff
+20:20:07.800 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+20:20:07.804 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.806 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.807 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.808 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.809 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:20:07.810 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [2]
+

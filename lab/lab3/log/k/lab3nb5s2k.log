@@ -1,0 +1,96 @@
+--------- node 3 -------------
+. ~/scripts/startNode.sh
+20:49:45.419 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91706974244110338; state is : SyncConnected
+20:49:45.697 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-0 by hlnode3
+20:49:53.646 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+20:49:54.702 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp851037377302614714s4r]
+20:49:54.703 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399337394703-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+20:49:54.704 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399337394703-0/tmp851037377302614714s4r-1399337394704]
+20:49:54.810 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+20:49:55.040 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+20:49:55.062 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@17504cb
+20:49:55.333 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+20:49:55.375 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+20:49:55.384 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@186edfb
+20:49:55.677 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706974244110338
+20:49:55.690 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706974244110338
+20:49:55.728 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+20:49:55.737 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp851037377302614714s4r
+20:49:55.745 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+20:49:56.350 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+20:49:56.551 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+20:49:56.551 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+20:49:56.565 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+20:49:56.607 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+20:49:56.629 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:49:56.630 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:49:56.630 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:49:56.630 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [0]
+20:49:56.762 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+20:49:56.770 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+20:49:56.813 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - NBModelProcessor created, id = 0
+20:49:56.881 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=23,A=42
+20:51:14.530 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - 57 seconds for 100000 instances
+20:51:14.673 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 100,000
+classified instances = 100,000
+classifications correct (percent) = 99.783
+Kappa Statistic (percent) = 99.402
+Kappa Temporal Statistic (percent) = 96.578
+20:52:03.747 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - 49 seconds for 100000 instances
+20:52:03.748 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 200,000
+classified instances = 200,000
+classifications correct (percent) = 99.181
+Kappa Statistic (percent) = 96.83
+Kappa Temporal Statistic (percent) = 91.018
+20:52:32.842 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - 29 seconds for 100000 instances
+20:52:32.843 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 300,000
+classified instances = 300,000
+classifications correct (percent) = 98.871
+Kappa Statistic (percent) = 94.056
+Kappa Temporal Statistic (percent) = 81.451
+
+
+
+----------- node 2 -----------
+. ~/scripts/startNode.sh
+20:49:48.498 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91706974244110339; state is : SyncConnected
+20:49:48.945 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-1 by hlnode2
+20:49:53.338 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+20:49:55.121 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp1188663832331689130s4r]
+20:49:55.124 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399337395123-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+20:49:55.126 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399337395123-0/tmp1188663832331689130s4r-1399337395125]
+20:49:55.225 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+20:49:55.523 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+20:49:55.561 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@7c1a5a
+20:49:55.909 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+20:49:55.963 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+20:49:55.970 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@11008e
+20:49:56.065 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706974244110339
+20:49:56.076 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706974244110339
+20:49:56.110 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+20:49:56.121 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp1188663832331689130s4r
+20:49:56.123 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+20:49:56.673 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+20:49:56.811 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+20:49:56.812 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+20:49:56.824 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+20:49:56.851 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+20:49:56.857 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:49:56.858 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:49:56.859 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+20:49:56.860 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [1]
+

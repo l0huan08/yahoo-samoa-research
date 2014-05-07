@@ -1,0 +1,275 @@
+---------- node 3 ------------
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.927 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.919 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.900 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.890 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.879 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.870 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.863 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.850 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.836 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.828 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.820 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.817 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.802 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.798 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:01.785 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:17.196 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - 18 seconds for 100000 instances
+19:32:17.198 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 200,000
+classified instances = 200,099
+classifications correct (percent) = 97.779
+Kappa Statistic (percent) = 90.733
+Kappa Temporal Statistic (percent) = -31.977
+19:32:20.479 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:20.494 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:20.505 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:20.518 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:20.527 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:20.541 [STREAM-3_PROCESSING-ITEM-4] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-3_PROCESSING-ITEM-4
+java.lang.ArrayIndexOutOfBoundsException: 20
+	at com.yahoo.labs.samoa.evaluation.BasicClassificationPerformanceEvaluator.addClassificationAttempt(BasicClassificationPerformanceEvaluator.java:93) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.evaluation.EvaluatorProcessor.process(EvaluatorProcessor.java:94) ~[samoa-api-0.0.1-SNAPSHOT.jar:na]
+	at com.yahoo.labs.samoa.topology.impl.S4ProcessingItem.onEvent(S4ProcessingItem.java:98) ~[samoa-s4-0.0.1-SNAPSHOT.jar:na]
+	at OverloadDispatcher2892.dispatchEvent(Unknown Source) ~[na:na]
+	at org.apache.s4.core.ProcessingElement.handleInputEvent(ProcessingElement.java:461) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.core.Stream$StreamEventProcessingTask.run(Stream.java:333) ~[s4-core-0.6.0-incubating.jar:0.6.0-incubating]
+	at org.apache.s4.comm.staging.BlockingThreadPoolExecutorService$RunnableWithPermitRelease.run(BlockingThreadPoolExecutorService.java:178) ~[s4-comm-0.6.0-incubating.jar:0.6.0-incubating]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) ~[na:1.7.0_51]
+	at java.lang.Thread.run(Thread.java:744) ~[na:1.7.0_51]
+19:32:34.050 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - 16 seconds for 100000 instances
+19:32:34.053 [STREAM-3_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 300,000
+classified instances = 300,105
+classifications correct (percent) = 97.301
+Kappa Statistic (percent) = 84.898
+Kappa Temporal Statistic (percent) = -132.463
+
+
+---------- node 2 ----------------
+19:31:15.643 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [1]

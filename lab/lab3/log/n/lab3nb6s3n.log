@@ -1,0 +1,156 @@
+------  node 3--------------
+Chl@hlnode3:/opt/s4/apache-s4-0.6.0-incubating-src$ . ~/scripts/startNode.sh
+19:55:35.649 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91706761339076611; state is : SyncConnected
+19:55:36.064 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-0 by hlnode3
+19:55:44.413 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+19:55:46.910 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp4605053800032692173s4r]
+19:55:46.911 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399334146911-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+19:55:46.913 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399334146911-0/tmp4605053800032692173s4r-1399334146912]
+19:55:47.074 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+19:55:47.458 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+19:55:47.516 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@5820c0
+19:55:47.970 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+19:55:48.032 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+19:55:48.047 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@17200ad
+19:55:48.370 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706761339076611
+19:55:48.383 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91706761339076611
+19:55:48.440 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+19:55:48.447 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp4605053800032692173s4r
+19:55:48.453 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+19:55:49.837 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+19:55:49.990 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:49.991 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+ARFF file URL=http://hlnode3/lab3/data/n.arff
+19:55:50.061 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.076 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.098 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.119 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.168 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.191 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.224 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.232 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.238 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.267 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.282 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.276 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.319 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.334 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.355 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.398 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.410 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.408 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.450 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.483 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.485 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.489 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.506 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.507 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.521 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.515 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.539 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.537 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+19:55:50.551 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+19:55:50.542 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.586 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.590 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.621 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.629 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.650 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.631 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.658 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.674 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.681 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.705 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.713 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.727 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.734 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:50.727 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.021 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.030 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.022 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.046 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.054 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.037 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+19:55:51.047 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.082 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.098 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.084 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.103 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.114 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.121 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.109 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+19:55:51.211 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+19:55:51.225 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:51.245 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:51.249 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:51.255 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:51.261 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:51.261 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [0]
+19:55:51.472 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+19:55:51.494 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+19:55:51.573 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBDistributor - NBDistributor created, id = 0
+19:55:52.635 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.l.c.hl.NBAttributeStat -  <***>NBAttributeStat.newProcessor(), just begin
+19:55:52.654 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.l.c.hl.NBAttributeStat -  ***NBAttributeStat.newProcessor(),hashcode=442125
+19:55:52.756 [STREAM-2_PROCESSING-ITEM-2] INFO  c.y.l.s.l.c.hl.NBAttributeStat -  ***NBAttributeStat created, id=0, iMin=0, iMax=41
+19:55:53.739 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor -  ^^^ NBModelProcessor newProcessor, id = 0
+19:55:53.741 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor -  ^^^ NBModelProcessor created, id = 0
+19:55:53.769 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=2,A=42
+19:56:13.973 [STREAM-5_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - 14 seconds for 10000 instances
+19:56:13.996 [STREAM-5_PROCESSING-ITEM-4] INFO  c.y.l.s.e.EvaluatorProcessor - evaluation instances = 10,000
+classified instances = 10,000
+classifications correct (percent) = 90.09
+Kappa Statistic (percent) = 80.15
+Kappa Temporal Statistic (percent) = 80.168
+
+
+
+------- node 2  -------------
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+19:55:47.542 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/n.arff
+19:55:47.691 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+19:55:47.692 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+19:55:47.748 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+19:55:47.771 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+19:55:47.782 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.785 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.786 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.787 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.788 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.790 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [1]
+19:55:55.246 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor -  ^^^ NBModelProcessor newProcessor, id = 0
+19:55:55.258 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor -  ^^^ NBModelProcessor created, id = 1
+19:55:55.263 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=2,A=42
+
+
+------- node 1 --------
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+19:55:47.685 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/n.arff
+19:55:47.823 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+19:55:47.824 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+19:55:47.873 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+19:55:47.897 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+19:55:47.901 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.902 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.903 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.904 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.905 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+19:55:47.907 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [2]
+19:55:55.129 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor -  ^^^ NBModelProcessor newProcessor, id = 0
+19:55:55.166 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor -  ^^^ NBModelProcessor created, id = 2
+19:55:55.173 [STREAM-3_PROCESSING-ITEM-3] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=2,A=42

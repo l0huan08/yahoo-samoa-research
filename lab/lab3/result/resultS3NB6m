@@ -1,0 +1,6 @@
+evaluation instances,classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent)
+1000.0,1000.0,80.30000000000001,60.474784116079746,59.95934959349595
+2000.0,2000.0,80.60000000000001,61.16224970671493,60.6889564336373
+evaluation instances,classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent)
+1000.0,1000.0,80.7,61.50009974067425,59.79166666666668
+2000.0,2000.0,82.1,64.31390999928229,63.05469556243549

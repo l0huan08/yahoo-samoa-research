@@ -1,0 +1,280 @@
+---------- node 3 ------------
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+21:00:49.354 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+21:00:49.540 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+21:00:49.541 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+21:00:49.554 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+21:00:49.600 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+21:00:49.606 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.607 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.607 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.607 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [0]
+21:00:49.742 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+21:00:49.748 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+21:00:49.794 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - NBModelProcessor created, id = 0
+21:00:49.824 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=23,A=42
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "S4 platform loader"
+21:04:52.497 [STREAM-1_PROCESSING-ITEM-1] ERROR org.apache.s4.core.S4Node - Uncaught exception in thread STREAM-1_PROCESSING-ITEM-1
+java.lang.OutOfMemoryError: Java heap space
+May 05, 2014 9:04:37 PM org.jboss.netty.channel.socket.nio.AbstractNioWorker
+WARNING: Unexpected exception in the selector loop.
+java.lang.OutOfMemoryError: Java heap space
+
+^Chl@hlnode3:/opt/s4/apache-s4-0.6.0-incubating-src$ . ~/scripts/startNode.sh
+21:05:46.822 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91707037565321219; state is : SyncConnected
+21:05:47.328 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-0 by hlnode3
+21:05:56.084 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+21:05:58.566 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp7812107416636560439s4r]
+21:05:58.573 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399338358573-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+21:05:58.574 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399338358573-0/tmp7812107416636560439s4r-1399338358574]
+21:05:58.737 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+21:05:59.138 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:05:59.203 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@17504cb
+21:05:59.628 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+21:05:59.708 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+21:05:59.716 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@186edfb
+21:06:00.024 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707037565321219
+21:06:00.040 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707037565321219
+21:06:00.090 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:06:00.102 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp7812107416636560439s4r
+21:06:00.105 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+21:06:01.543 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.548 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.578 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+21:06:01.610 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.625 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.671 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.688 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.678 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.738 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.755 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.778 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.794 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.799 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+21:06:01.865 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.889 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.905 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.931 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.937 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.952 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:01.961 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.010 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.001 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.019 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.051 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.022 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.066 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.093 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.082 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.107 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.114 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.143 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.144 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.186 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.195 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.201 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.215 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.215 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.240 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.240 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.259 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.261 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.290 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.293 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.291 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.314 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.316 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.332 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.342 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+21:06:02.349 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+21:06:02.343 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.353 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.361 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.621 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.629 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.631 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.663 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.671 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.662 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+21:06:02.644 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.700 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.701 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.703 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.710 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.709 [deserializer-0] ERROR org.apache.s4.core.ReceiverImpl - Could not find target stream for event with streamId=STREAM-0_PROCESSING-ITEM-0
+21:06:02.787 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+21:06:02.803 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:06:02.821 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:06:02.827 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:06:02.829 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [0]
+21:06:02.972 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - newProcessor(), id=0,trainRatio=0.2,testRatio=0.8
+21:06:03.598 [STREAM-0_PROCESSING-ITEM-0] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - onCreate:id=0,trainRatio=0.2,testRatio=0.8
+21:06:03.717 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - NBModelProcessor created, id = 0
+21:06:03.802 [STREAM-1_PROCESSING-ITEM-1] INFO  c.y.l.s.l.c.hl.NBModelProcessor - K=23,A=42
+^C
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "main-SendThread(hlnode3:2181)"
+
+
+
+
+----------- node 2 ------------
+. ~/scripts/startNode.sh
+21:00:42.405 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91707017081257988; state is : SyncConnected
+21:00:42.848 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-1 by hlnode2
+21:00:46.036 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+21:00:47.839 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp6584246313139288173s4r]
+21:00:47.842 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399338047841-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+21:00:47.844 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399338047841-0/tmp6584246313139288173s4r-1399338047843]
+21:00:47.944 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+21:00:48.234 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:00:48.272 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@7c1a5a
+21:00:48.612 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+21:00:48.666 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+21:00:48.673 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@11008e
+21:00:48.786 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707017081257988
+21:00:48.796 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707017081257988
+21:00:48.832 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:00:48.845 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp6584246313139288173s4r
+21:00:48.848 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+21:00:49.389 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+21:00:49.525 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+21:00:49.526 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+21:00:49.538 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+21:00:49.566 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+21:00:49.572 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.573 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.574 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.575 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [1]
+21:02:15.105 [ZkClient-EventThread-9-hlnode3] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]}
+^Chl@hlnode2:/opt/s4/apache-s4-0.6.0-incubating-src$ . ~/scripts/startNode.sh
+21:05:49.718 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91707037565321220; state is : SyncConnected
+21:05:50.157 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-1 by hlnode2
+21:05:55.746 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+21:05:57.531 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp566502552330625336s4r]
+21:05:57.534 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399338357533-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+21:05:57.536 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399338357533-0/tmp566502552330625336s4r-1399338357535]
+21:05:57.639 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+21:05:57.928 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:05:57.966 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@1a60e09
+21:05:58.310 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+21:05:58.367 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+21:05:58.374 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@3b813c
+21:05:58.468 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707037565321220
+21:05:58.477 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707037565321220
+21:05:58.519 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:05:58.532 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp566502552330625336s4r
+21:05:58.536 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+21:05:59.071 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+21:05:59.256 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+21:05:59.257 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+21:05:59.269 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+21:05:59.296 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+21:05:59.325 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:05:59.328 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:05:59.329 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:05:59.330 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [1]
+21:07:44.782 [ZkClient-EventThread-9-hlnode3] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]}
+^Chl@hlnode2:/opt/s4/apache-s4-0.6.0-incubating-src$ ^C
+hl@hlnode2:/opt/s4/apache-s4-0.6.0-incubating-src$ 
+
+
+
+--------------- node 1 -----------------------
+. ~/scripts/startNode.sh
+21:00:37.693 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91707017081257986; state is : SyncConnected
+21:00:38.163 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-2 by hlnode1
+21:00:45.587 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+21:00:47.771 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp7070640527332557144s4r]
+21:00:47.773 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399338047772-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+21:00:47.775 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399338047772-0/tmp7070640527332557144s4r-1399338047775]
+21:00:47.871 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+21:00:48.162 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:00:48.199 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@1644141
+21:00:48.556 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+21:00:48.608 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+21:00:48.624 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@d3d11f
+21:00:48.703 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707017081257986
+21:00:48.712 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707017081257986
+21:00:48.761 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:00:48.772 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp7070640527332557144s4r
+21:00:48.774 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+21:00:49.458 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+21:00:49.631 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+21:00:49.634 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+21:00:49.657 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+21:00:49.685 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+21:00:49.689 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.690 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.691 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:00:49.692 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [2]
+21:02:14.659 [ZkClient-EventThread-9-hlnode3] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]}
+^Chl@hlnode1:/opt/s4/apache-s4-0.6.0-incubating-src$ . ~/scripts/startNode.sh
+21:05:44.219 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - New session:91707037565321218; state is : SyncConnected
+21:05:44.689 [main] INFO  o.a.s.comm.topology.AssignmentFromZK - Successfully acquired task:Task-2 by hlnode1
+21:05:55.307 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Initializing S4 app with : []]
+21:05:57.452 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loading application [SamoaS4App] from file [/tmp/tmp1226012271655935207s4r]
+21:05:57.455 [S4 platform loader] WARN  org.apache.s4.core.DefaultCoreModule - s4.tmp.dir not specified, using temporary directory [/tmp/1399338357454-0] for unpacking S4R. You may want to specify a parent non-temporary directory.
+21:05:57.457 [S4 platform loader] INFO  o.a.s4.base.util.S4RLoaderFactory - Unzipping S4R archive in [/tmp/1399338357454-0/tmp1226012271655935207s4r-1399338357456]
+21:05:57.555 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - App class name is: com.yahoo.labs.samoa.topology.impl.S4DoTask
+21:05:57.848 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:05:57.886 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.comm.tcp.TCPEmitter@1644141
+21:05:58.241 [S4 platform loader] INFO  o.a.s.c.s.ThrottlingSenderExecutorServiceFactory - Creating a throttling executor with a pool size of 1 and max rate of 200000 events / s
+21:05:58.306 [S4 platform loader] INFO  org.apache.s4.core.util.S4Metrics - Metrics reporting not configured
+21:05:58.313 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Adding topology change listener:org.apache.s4.core.SenderImpl@d3d11f
+21:05:58.388 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707037565321218
+21:05:58.398 [S4 platform loader] INFO  o.a.s4.comm.topology.ClustersFromZK - New session:91707037565321218
+21:05:58.443 [S4 platform loader] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from null
+21:05:58.454 [S4 platform loader] INFO  org.apache.s4.core.S4Bootstrap - Loaded application from file /tmp/tmp1226012271655935207s4r
+21:05:58.456 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - DoTaskApp onInit
+
+SAMOA: Scalable Advanced Massive Online Analysis Platform 
+Version: 0.0.1
+Copyright: Copyright Yahoo! Inc 2013
+Web: http://github.com/yahoo/samoa
+
+21:05:59.141 [S4 platform loader] INFO  c.y.l.s.s.hl.HLSplitDataPreProcessor - init(): trainRatio=0.2,testRatio=0.8
+ARFF file URL=http://hlnode3/lab3/data/k.arff
+21:05:59.292 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - ================================================
+21:05:59.293 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Begin init NaiveBayes Classifier topology.
+21:05:59.316 [S4 platform loader] INFO  c.y.l.s.l.classifiers.hl.NaiveBayes - Sucessfully initializing NaiveBayes classifier topology.
+21:05:59.345 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4EntranceProcessingItem].
+21:05:59.349 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:05:59.350 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:05:59.351 [S4 platform loader] INFO  org.apache.s4.core.App - Init prototype [com.yahoo.labs.samoa.topology.impl.S4ProcessingItem].
+21:05:59.352 [S4 platform loader] INFO  c.y.l.samoa.topology.impl.S4DoTask - Starting DoTaskApp... App Partition [2]
+21:07:44.322 [ZkClient-EventThread-9-hlnode3] INFO  o.a.s4.comm.topology.ClusterFromZK - Changing cluster topology to { nbNodes=2,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]} from { nbNodes=3,name=cluster,mode=unicast,type=,nodes=[{partition=2,port=12002,machineName=hlnode1,taskId=Task-2}, {partition=0,port=12000,machineName=hlnode3,taskId=Task-0}, {partition=1,port=12001,machineName=hlnode2,taskId=Task-1}]}
+^Chl@hlnode1:/opt/s4/apache-s4-0.6.0-incubating-src$ ^C
