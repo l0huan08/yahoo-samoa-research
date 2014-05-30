@@ -21,7 +21,5 @@ My main work includes four parts:
 3.Experiment 2: Implement my own data mining algorithm (Non-Parallel Naive Bayes) on SAMOA
 4.Experiment 3: Implement parallel Naive Bayes algorithm on SAMOA
 
-Currently, Experiment 3 are not finished, because of some bug in my code (actually it's because SAMOA lack of documents so I misunderstood the proper usage of some functions of SAMOA).
-
 The reports could be found in "White Papers" and "Lab". The presentations could be also found in "PPT".
 
